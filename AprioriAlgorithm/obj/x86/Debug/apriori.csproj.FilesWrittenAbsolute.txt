@@ -1,0 +1,5 @@
+/Users/JeongMinCha/Development/XamarinStudio/AprioriAlgorithm/AprioriAlgorithm/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/JeongMinCha/Development/XamarinStudio/AprioriAlgorithm/AprioriAlgorithm/bin/Debug/AprioriAlgorithm.exe.mdb
+/Users/JeongMinCha/Development/XamarinStudio/AprioriAlgorithm/AprioriAlgorithm/bin/Debug/AprioriAlgorithm.exe
+/Users/JeongMinCha/Development/XamarinStudio/AprioriAlgorithm/AprioriAlgorithm/obj/x86/Debug/AprioriAlgorithm.exe
+/Users/JeongMinCha/Development/XamarinStudio/AprioriAlgorithm/AprioriAlgorithm/obj/x86/Debug/AprioriAlgorithm.exe.mdb
