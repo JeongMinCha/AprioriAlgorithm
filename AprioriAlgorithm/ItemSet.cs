@@ -16,6 +16,7 @@ namespace AprioriAlgorithm
 		 * will be considered as same instances. */
 		public override bool Equals(System.Object obj)
 		{
+//			return false;
 			if (obj == null)
 				return false;
 
@@ -36,18 +37,19 @@ namespace AprioriAlgorithm
 					return false;
 			}
 			return true;
-		}
 
-		// meaningless method... 
-		// just for distinguish two instances with different elements
-		public override int GetHashCode()
-		{
-			int squareSum = 0;
-			foreach(int item in this)
-			{
-				squareSum += item*item;
-			}
-			return squareSum;	// return sum of square of items
+//			int sum1 = 0;
+//			int sum2 = 0;
+//			foreach (int item in this)
+//				sum1 += item*item;
+//			foreach (int item in iSet)
+//				sum2 += item*item;
+//
+//			if (sum1 == sum2)
+//				return true;
+//			else
+//				return false;
+				
 		}
 
 		new public String ToString()

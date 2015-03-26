@@ -9,6 +9,7 @@ namespace AprioriAlgorithm
 	{
 		public static void Main (string[] args)
 		{
+			Console.WriteLine(DateTime.Now.ToString("O"));
 			string inputFile = null;
 			string outputFile = null;
 			int minSupPercent = 0;
@@ -73,6 +74,7 @@ namespace AprioriAlgorithm
 				}
 			}
 			Console.WriteLine("Finding Association Rules is finished.");
+			Console.WriteLine(DateTime.Now.ToString("O"));
 		}
 
 		/* Print all item sets in input item set table */

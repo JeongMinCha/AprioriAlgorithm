@@ -52,7 +52,6 @@ namespace AprioriAlgorithm
 			foreach(ItemSet itemSet in keys)
 			{
 				int support = this[itemSet];
-//				Console.WriteLine(itemSet.ToString() + ", support: " + support);
 				if (support >= minSupport)
 				{
 					frequentTable.Add(itemSet, support);
@@ -100,24 +99,8 @@ namespace AprioriAlgorithm
 					if (joinCondition == true)
 					{
 						c = ItemSet.UnionBetween(I1, I2);	// join step: generate candidates
-//						Console.WriteLine("join! " + c.ToString());
-						try 
-						{
-							if (hasInfrequentSubSet(c) == false)
-							{
-//								Console.WriteLine("input: " + c.ToString() + "<- " + I1.ToString() + ", " + I2.ToString());
-								candidateTable.Add(c, 0);
-							}
-						} 
-						catch (Exception e)
-						{
-							Console.WriteLine(e.Message);
-							Console.WriteLine("exception!");
-							Console.WriteLine(c.ToString()) ;
-							Console.WriteLine("!!!-> " + I1.ToString() + I2.ToString());
-//							Console.WriteLine(candidateTable.ToString());
-							System.Environment.Exit(-1);
-						}
+						if (hasInfrequentSubSet(c) == false)
+							candidateTable.Add(c, 0);
 					}
 				}
 			}
