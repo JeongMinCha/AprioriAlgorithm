@@ -16,7 +16,6 @@ namespace AprioriAlgorithm
 		 * will be considered as same instances. */
 		public override bool Equals(System.Object obj)
 		{
-//			return false;
 			if (obj == null)
 				return false;
 
@@ -36,20 +35,7 @@ namespace AprioriAlgorithm
 				if (arr1[i] != arr2[i])
 					return false;
 			}
-			return true;
-
-//			int sum1 = 0;
-//			int sum2 = 0;
-//			foreach (int item in this)
-//				sum1 += item*item;
-//			foreach (int item in iSet)
-//				sum2 += item*item;
-//
-//			if (sum1 == sum2)
-//				return true;
-//			else
-//				return false;
-				
+			return true;		
 		}
 
 		new public String ToString()
